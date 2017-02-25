@@ -1,33 +1,16 @@
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Intermediate and output files
+cart.asm
+tiles.inc
+*.ihx
+*.lst
+*.rel
+*.sym
+*.gb
 
-# Precompiled Headers
-*.gch
-*.pch
+# Compiled Utility programs
+convtiles
+ihx_to_bin
 
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
+# Temporary files
+\#*
+*~

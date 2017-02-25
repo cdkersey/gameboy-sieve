@@ -1,0 +1,17 @@
+Sieve of Eratosthenes for Game Boy
+==================================
+
+This has been tested on higan, sdlgnuboy, bgb, and vba, but not a real Game
+Boy. The hope is that anybody on Debian or any other distro that packages sdcc
+can use this as the basis for their development environment, perhaps by
+splitting some of the things in cart.c out into headers.
+
+Tiles are edited in textual format in tiles.til, then converted by the
+convtiles parser to C source code with a ".inc" extension that is then included
+from cart.c. This non-compressed tileset is by far the bulk of the image size.
+The assembled and linked output in Intel hex format is finally converted to a
+.gb image by ihx_to_bin, which also adds the appropriate checksums to the
+header.
+
+This is meant to be a starting point for open source Game Boy development in
+Linux but is by no means comprehensive.
